@@ -42,7 +42,7 @@ class SimasKemenagGoIdSpider(Spider):
             long_lat = sel.xpath("./comment()[2]").re(r'align="center">(-?[0-9.]+)</')
 
             try:
-                mil.add_value('longitute', long_lat[0])
+                mil.add_value('longitude', long_lat[0])
                 mil.add_value('latitude', long_lat[1])
             except IndexError:
                 self.logger.error(

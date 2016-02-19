@@ -29,7 +29,7 @@ class MasjidItem(Item):
     remaja = Field()
     no_telepon = Field()
     keterangan = Field()
-    longitute = Field()
+    longitude = Field()
     latitude = Field()
 
 
